@@ -25,7 +25,7 @@ class AddressPost(APIView):
                             status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class AddressDetail(APIView):
+class AddressDelete(APIView):
 
     def get_object(self, pk):
         # Returns an object instance that should
